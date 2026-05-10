@@ -1,0 +1,1222 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/bluepad32/libbluepad32.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"add_compile_options",
+			"add_c_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs"
+		],
+		"files" : 
+		[
+			"/Users/ebadahmed/.platformio/packages/framework-espidf/tools/cmake/component.cmake",
+			"components/bluepad32/CMakeLists.txt",
+			"/Users/ebadahmed/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 157,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 490,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 524,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 358,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 475,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 477,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 281,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 476,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 474,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 492,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 319,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-shrink-wrap"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=/Users/ebadahmed/Desktop/BalancRobot=."
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=/Users/ebadahmed/.platformio/packages/framework-espidf=/IDF"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-std=gnu17"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-Wno-old-style-declaration"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "IDF_VER=\"5.4.2\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 12,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/config"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/bluepad32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/config/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/include/soc/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/soc/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/soc/esp32/register"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/hal/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_rom/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_rom/esp32/include/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_rom/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/xtensa/deprecated_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/lwip/port/esp32xx/include/sys"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/3rd-party/bluedroid/decoder/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/3rd-party/bluedroid/encoder/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/3rd-party/lwip/dhcp-server"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/3rd-party/md5"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/3rd-party/yxml"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/src/classic"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/src/ble/gatt-service"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/src/ble"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/platform/embedded"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/platform/freertos"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/platform/lwip"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/btstack/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/app_update/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/bootloader_support/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/bootloader_support/bootloader_flash/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_app_format/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_bootloader_format/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/cmd_nvs"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/console"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/vfs/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_vfs_console/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/Desktop/BalancRobot/components/cmd_system"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/spi_flash/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/driver/deprecated"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/driver/i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/driver/touch_sensor/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/driver/twai/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/driver/touch_sensor/esp32/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_gpio/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_pcnt/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_gptimer/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_spi/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_mcpwm/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_ana_cmpr/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_i2s/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_sdmmc/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/sdmmc/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_sdspi/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_sdio/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_dac/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_rmt/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_tsens/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_sdm/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_uart/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_ledc/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_parlio/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/ebadahmed/.platformio/packages/framework-espidf/components/esp_driver_usb_serial_jtag/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_btstack::@d8315fe8cfc2fa4d6138"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_cmd_nvs::@e4fc32f52fa0b16fa6c8"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "__idf_cmd_system::@25a1e694e5697e9bb179"
+		}
+	],
+	"id" : "__idf_bluepad32::@19929012acb95a8cf578",
+	"name" : "__idf_bluepad32",
+	"nameOnDisk" : "libbluepad32.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/bluepad32",
+		"source" : "components/bluepad32"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_allowlist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_conn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_hci_cmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_le.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_service.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_setup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_balance_board.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_controller.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_controller_type.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_gamepad.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_keyboard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/controller/uni_mouse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_8bitdo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_android.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_atari.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_ds3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_ds4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_ds5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_generic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_icade.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_keyboard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_mouse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_nimbus.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_ouya.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_psmove.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_smarttvremote.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_stadia.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_steam.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_switch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_wii.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/parser/uni_hid_parser_xboxone.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_circular_buffer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_hid_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_joystick.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_property.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_virtual_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_bredr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/bt/uni_bt_sdp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/arch/uni_console_esp32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/arch/uni_system_esp32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/arch/uni_log_esp32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/arch/uni_property_esp32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/uni_mouse_quadrature.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_mightymiggy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_nina.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_2plus.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_800xl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_a500.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_c64.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_msx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/bluepad32/platform/uni_platform_unijoysticle_singleport.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
