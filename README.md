@@ -42,6 +42,13 @@ If `pio` is still not found, restart your terminal or use:
 python3 -m platformio --version
 ```
 
+On Windows PowerShell, equivalent commands are:
+
+```powershell
+py -m pip install --user -U platformio
+py -m platformio --version
+```
+
 ## 4) Build
 
 ### In VS Code
@@ -100,6 +107,60 @@ If you are using VS Code PlatformIO extension, use the extension-managed binary 
 ```bash
 ~/.platformio/penv/bin/pio run -e m5stick-c
 ```
+
+### MissingPackageManifestError (after clone)
+
+This usually means PlatformIO package cache is corrupt or your shell is using a different/older PlatformIO Core.
+
+On macOS/Linux, run:
+
+```bash
+rm -rf ~/.platformio/platforms/espressif32 ~/.platformio/.cache
+~/.platformio/penv/bin/pio pkg update -g -p https://github.com/pioarduino/platform-espressif32/releases/download/54.03.21/platform-espressif32.zip
+~/.platformio/penv/bin/pio run -e m5stick-c
+```
+
+If it still fails, fully reset PlatformIO packages and rebuild:
+
+```bash
+rm -rf ~/.platformio/platforms ~/.platformio/packages ~/.platformio/.cache
+~/.platformio/penv/bin/pio run -e m5stick-c
+```
+
+Important: use the same binary path (`~/.platformio/penv/bin/pio`) for build commands to avoid mixed installations.
+
+Windows PowerShell fix sequence:
+
+```powershell
+Remove-Item -Recurse -Force $env:USERPROFILE\.platformio\platforms\espressif32 -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force $env:USERPROFILE\.platformio\.cache -ErrorAction SilentlyContinue
+& "$env:USERPROFILE\.platformio\penv\Scripts\pio.exe" pkg update -g -p "https://github.com/pioarduino/platform-espressif32/releases/download/54.03.21/platform-espressif32.zip"
+& "$env:USERPROFILE\.platformio\penv\Scripts\pio.exe" run -e m5stick-c
+```
+
+If still failing, full reset on Windows:
+
+```powershell
+Remove-Item -Recurse -Force $env:USERPROFILE\.platformio\platforms -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force $env:USERPROFILE\.platformio\packages -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force $env:USERPROFILE\.platformio\.cache -ErrorAction SilentlyContinue
+& "$env:USERPROFILE\.platformio\penv\Scripts\pio.exe" run -e m5stick-c
+```
+
+On Windows, also keep using the same PlatformIO binary path shown above to avoid mixed installs.
+
+### TypeError: ParamType.get_metavar() missing 1 required positional argument: 'ctx'
+
+This happens on Windows when Click 8.2+ is installed inside PlatformIO's virtual environment, which breaks the bundled `esptoolpy` package.
+
+Fix — run this once in PowerShell:
+
+```powershell
+& "$env:USERPROFILE\.platformio\penv\Scripts\python.exe" -m pip install "click<8.2"
+& "$env:USERPROFILE\.platformio\penv\Scripts\pio.exe" run -e m5stick-c
+```
+
+That's it. No other changes needed.
 
 ### First build takes a long time
 
