@@ -1,8 +1,8 @@
-# Install script for directory: /Users/ebadahmed/Desktop/BalancRobot
+# Install script for directory: C:/Users/mbila/OneDrive/Desktop/Balanc-Robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bluepad32_arduino_app_template")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/ebadahmed/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/mbila/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/cmake_install.cmake")
+  include("C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -58,6 +58,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
