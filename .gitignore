@@ -1,0 +1,18 @@
+# PlatformIO build artifacts
+.pio/
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Managed components (downloaded at build time)
+managed_components/
+
+# SDK config (generated per-build, defaults are kept)
+sdkconfig
+sdkconfig.old
+
+# Build map files
+*.map
