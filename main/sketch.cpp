@@ -22,12 +22,19 @@
 #include <M5StickCPlus.h>
 #include <Wire.h>
 #include <Bluepad32.h>
+#include <VL53L0X.h>
 
 // ── Pin & constant definitions ──────────────────────────────────────────────
 #define LED        10       // Built-in LED on M5StickC Plus (GPIO10)
 #define N_CAL1     100      // Number of samples for Cal-1 (pitch gyro)
 #define N_CAL2     100      // Number of samples for Cal-2 (accel + yaw gyro)
 #define LCDV_MID   60
+
+// ── ToF obstacle detection ──────────────────────────────────────────────────
+#define TOF_SDA               32     // Grove port SDA
+#define TOF_SCL               33     // Grove port SCL
+#define OBSTACLE_THRESHOLD_MM 200    // Stop & beep if closer than 200mm (20cm)
+#define BEEP_FREQ             4000   // Buzzer frequency in Hz
 
 // ── Controller deadzone ─────────────────────────────────────────────────────
 #define STICK_DEADZONE  50  // Ignore stick values within ±50 (out of ±512)
@@ -36,6 +43,12 @@
 // ── Bluepad32 controller ────────────────────────────────────────────────────
 ControllerPtr myControllers[BP32_MAX_GAMEPADS];
 bool controllerConnected = false;
+
+// ── ToF sensor ──────────────────────────────────────────────────────────────
+VL53L0X tofSensor;
+bool tofAvailable       = false;
+uint16_t tofDistance    = 8190;   // max = no obstacle
+bool obstacleDetected   = false;
 
 // ── Global variables (balancing) ────────────────────────────────────────────
 boolean serialMonitor = true;
@@ -96,6 +109,7 @@ void sendStatus();
 void readGyro();
 void processControllers();
 void processGamepad(ControllerPtr ctl);
+void checkObstacle();
 
 // ═══════════════════════════════════════════════════════════════════════════
 //  BLUEPAD32 CALLBACKS
@@ -217,6 +231,19 @@ void setup() {
     resetMotor();
     resetPara();
     resetVar();
+
+    // ── Initialize ToF sensor on Grove port (Wire1) ──
+    Wire1.begin(TOF_SDA, TOF_SCL);
+    tofSensor.setBus(&Wire1);
+    tofSensor.setTimeout(500);
+    if (tofSensor.init()) {
+        tofSensor.startContinuous(50);  // New measurement every 50ms
+        tofAvailable = true;
+        Console.println("ToF sensor initialized OK");
+    } else {
+        Console.println("WARNING: ToF sensor not found!");
+    }
+
     calib1();
 
     // ── Initialize Bluepad32 ──
@@ -249,6 +276,7 @@ void loop() {
 
     checkButtonP();
     getGyro();
+    checkObstacle();
 
     // Apply controller input to movement
     if (controllerConnected && standing) {
@@ -259,6 +287,11 @@ void loop() {
         } else {
             spinStep = 0.0;
         }
+    }
+
+    // Override: block forward movement if obstacle detected
+    if (obstacleDetected && standing && moveRate > 0) {
+        moveRate = 0;
     }
 
     if (!standing) {
@@ -574,6 +607,42 @@ void dispBatVolt() {
 }
 
 void sendStatus() {
-    Console.printf("%lu stand=%d accX=%.2f power=%.2f ang=%.2f move=%.2f spin=%.2f\n",
-                   millis() - time0, standing, accXdata, power, varAng, moveRate, spinStep);
+    Console.printf("%lu stand=%d accX=%.2f power=%.2f ang=%.2f move=%.2f spin=%.2f tof=%dmm\n",
+                   millis() - time0, standing, accXdata, power, varAng, moveRate, spinStep, tofDistance);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  TOF OBSTACLE DETECTION
+// ═══════════════════════════════════════════════════════════════════════════
+void checkObstacle() {
+    if (!tofAvailable) return;
+
+    // Non-blocking: check if new measurement data is available
+    uint8_t intStatus = tofSensor.readReg(VL53L0X::RESULT_INTERRUPT_STATUS);
+    if ((intStatus & 0x07) == 0) return;  // No new data yet
+
+    // Data is ready — read range and clear interrupt
+    tofDistance = tofSensor.readReg16Bit(VL53L0X::RESULT_RANGE_STATUS + 10);
+    tofSensor.writeReg(VL53L0X::SYSTEM_INTERRUPT_CLEAR, 0x01);
+
+    // Check for valid reading (VL53L0X returns 8190 for out-of-range)
+    if (tofDistance > 8000) {
+        obstacleDetected = false;
+        M5.Beep.mute();
+        return;
+    }
+
+    if (tofDistance < OBSTACLE_THRESHOLD_MM) {
+        if (!obstacleDetected) {
+            Console.printf("OBSTACLE at %d mm!\n", tofDistance);
+        }
+        obstacleDetected = true;
+        M5.Beep.tone(BEEP_FREQ);
+    } else {
+        if (obstacleDetected) {
+            Console.println("Obstacle cleared");
+        }
+        obstacleDetected = false;
+        M5.Beep.mute();
+    }
 }
