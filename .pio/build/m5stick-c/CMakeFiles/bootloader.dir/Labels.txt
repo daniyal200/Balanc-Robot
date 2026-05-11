@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/CMakeFiles/bootloader
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/CMakeFiles/bootloader.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/CMakeFiles/bootloader-complete.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/Users/mbila/OneDrive/Desktop/Balanc-Robot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/CMakeFiles/bootloader
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/CMakeFiles/bootloader.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/CMakeFiles/bootloader-complete.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
