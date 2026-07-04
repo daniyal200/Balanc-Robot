@@ -1046,6 +1046,13 @@
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/M5StickCPlus/CMakeFiles/install.dir
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/M5StickCPlus/CMakeFiles/install/local.dir
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/M5StickCPlus/CMakeFiles/install/strip.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/__idf_VL53L0X.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/edit_cache.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/rebuild_cache.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/list_install_components.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/install.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/install/local.dir
+/Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/VL53L0X/CMakeFiles/install/strip.dir
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/main/CMakeFiles/__idf_main.dir
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/main/CMakeFiles/edit_cache.dir
 /Users/ebadahmed/Desktop/BalancRobot/.pio/build/m5stick-c/esp-idf/main/CMakeFiles/rebuild_cache.dir

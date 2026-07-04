@@ -2461,6 +2461,25 @@ rule C_STATIC_LIBRARY_LINKER____idf_M5StickCPlus_
 
 
 #############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER____idf_VL53L0X_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/Users/ebadahmed/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-g++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_VL53L0X_
+  command = $PRE_LINK && /Users/ebadahmed/.platformio/packages/tool-cmake/bin/cmake -E rm -f $TARGET_FILE && /Users/ebadahmed/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ebadahmed/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib $TARGET_FILE && /Users/ebadahmed/.platformio/packages/tool-cmake/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for compiling C files.
 
 rule C_COMPILER____idf_main_unscanned_

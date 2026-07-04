@@ -111,4 +111,5 @@ $<TARGET_FILE:__idf_joltwallet__littlefs>
 $<TARGET_FILE:__idf_arduino>
 $<TARGET_FILE:__idf_bluepad32_arduino>
 $<TARGET_FILE:__idf_M5StickCPlus>
+$<TARGET_FILE:__idf_VL53L0X>
 $<TARGET_FILE:__idf_main>
